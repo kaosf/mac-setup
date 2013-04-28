@@ -18,3 +18,6 @@ brew install findutils
 
 # gnu-sed
 brew install gnu-sed
+
+# tig
+brew install tig
