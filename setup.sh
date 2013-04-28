@@ -12,3 +12,7 @@ ln -s $HOME/local/bin/homebrew/bin/brew
 brew install coreutils
 echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bashrc
 exec $SHELL
+
+# findutils
+brew install findutils
+ln -s $HOME/local/bin/gxargs $HOME/local/bin/xargs
