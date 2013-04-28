@@ -25,3 +25,13 @@ brew install gnu-sed
 
 # tig
 brew install tig
+
+# for Ruby
+# ref.
+#   http://qiita.com/items/05a09296f3633cadac3f
+#   http://qiita.com/items/c70a8f65edb69bedfc37
+#   http://qiita.com/items/12457815d5cee3723b97
+brew install openssl curl-ca-bundle readline
+cp \
+ $HOME/local/bin/homebrew/Cellar/curl-ca-bundle/1.87/share/ca-bundle.crt \
+ $HOME/local/etc/openssl/cert.pem
