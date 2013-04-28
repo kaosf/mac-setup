@@ -16,3 +16,7 @@ exec $SHELL
 # findutils
 brew install findutils
 ln -s $HOME/local/bin/gxargs $HOME/local/bin/xargs
+
+# gnu-sed
+brew install gnu-sed
+ln -s $HOME/local/bin/
