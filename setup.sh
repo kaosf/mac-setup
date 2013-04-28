@@ -41,4 +41,4 @@ echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv # or .bashrc
 exec $SHELL
 brew install ruby-build
 
-RUBY_CONFIGURE_OPTS="--with-readline-dir=`brew --prefix readline` --with-openssl-dir=`brew --prefix openssl`" rbenv install 2.0.0-p0
+rbenv install 2.0.0-p0
