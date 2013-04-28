@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # ref. https://gist.github.com/kaosf/5471662
-echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.zshenv # or .bashrc
+echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.zshenv # or .bash_profile
 exec $SHELL
 mkdir -p $HOME/local/bin
 cd $HOME/local/bin
@@ -9,12 +9,12 @@ git clone https://github.com/mxcl/homebrew --depth 1
 ln -s $HOME/local/bin/homebrew/bin/brew
 
 # GCC
-echo 'export PATH=$HOME/local/bin/homebrew/Library/ENV/4.3:$PATH' >> $HOME/.zshenv # or .bashrc
+echo 'export PATH=$HOME/local/bin/homebrew/Library/ENV/4.3:$PATH' >> $HOME/.zshenv # or .bash_profile
 exec $SHELL
 
 # coreutils
 brew install coreutils
-echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bashrc
+echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bash_profile
 exec $SHELL
 
 # findutils
@@ -37,7 +37,7 @@ cp \
  $HOME/local/etc/openssl/cert.pem
 
 brew install rbenv
-echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv # or .bashrc
+echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv # or .bash_profile
 exec $SHELL
 brew install ruby-build
 
