@@ -16,9 +16,11 @@ exec $SHELL
 brew install coreutils
 echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bash_profile
 exec $SHELL
+ln -s $HOME/local/bin/gsed $HOME/local/bin/sed
 
 # findutils
 brew install findutils
+ln -s $HOME/local/bin/gxargs $HOME/local/bin/xargs
 
 # gnu-sed
 brew install gnu-sed
