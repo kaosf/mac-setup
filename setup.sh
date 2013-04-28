@@ -8,6 +8,10 @@ cd $HOME/local/bin
 git clone https://github.com/mxcl/homebrew --depth 1
 ln -s $HOME/local/bin/homebrew/bin/brew
 
+# GCC
+echo 'export PATH=$HOME/local/bin/homebrew/Library/ENV/4.3:$PATH' >> $HOME/.zshrc # or .bashrc
+exec $SHELL
+
 # coreutils
 brew install coreutils
 echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bashrc
