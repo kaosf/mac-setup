@@ -28,6 +28,9 @@ brew install gnu-sed
 # tig
 brew install tig
 
+# tmux
+brew install tmux
+
 # for Ruby
 # ref.
 #   http://qiita.com/items/05a09296f3633cadac3f
