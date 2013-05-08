@@ -14,7 +14,7 @@ exec $SHELL
 
 # coreutils
 brew install coreutils
-echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshrc # or .bash_profile
+echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshenv # or .bash_profile
 exec $SHELL
 ln -s $HOME/local/bin/gsed $HOME/local/bin/sed
 
