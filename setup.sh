@@ -47,3 +47,8 @@ exec $SHELL
 brew install ruby-build
 
 rbenv install 2.0.0-p0
+
+# for pip and Python
+# ref. http://conta.hatenablog.com/entry/2012/01/07/161026
+brew install python
+echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> .zshenv
