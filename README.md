@@ -4,6 +4,6 @@ The results of `sw_vers` command is;
 
 ```
 ProductName:    Mac OS X
-ProductVersion: 10.8.3
-BuildVersion:   12D78
+ProductVersion: 10.9.2
+BuildVersion:   13C64
 ```
