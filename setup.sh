@@ -52,3 +52,7 @@ rbenv install 2.0.0-p0
 # ref. http://conta.hatenablog.com/entry/2012/01/07/161026
 brew install python
 echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> .zshenv
+
+# Vim 7.4
+# ref. http://qiita.com/peroon/items/57bf22c0e32236752c5d
+brew install vim --devel --with-lua
