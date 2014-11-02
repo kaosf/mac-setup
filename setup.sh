@@ -56,3 +56,11 @@ echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> .zshenv
 # Vim 7.4
 # ref. http://qiita.com/peroon/items/57bf22c0e32236752c5d
 brew install vim --devel --with-lua
+if [ ! -d $HOME/.vim/bundle ]
+then
+  mkdir -p $HOME/.vim/bundle
+fi
+if [ ! -d $HOME/.vim/bundle/neobundle.vim ]
+then
+  git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
+fi
