@@ -27,11 +27,8 @@ ln -s $HOME/local/bin/gxargs $HOME/local/bin/xargs
 # gnu-sed
 brew install gnu-sed
 
-# tig
-brew install tig
-
-# tmux
-brew install tmux
+# Install some applications
+brew install git tig tmux wget
 
 # for Ruby
 # ref.
