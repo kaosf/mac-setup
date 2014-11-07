@@ -54,6 +54,7 @@ echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> $PROFILE
 # Vim 7.4
 # ref. http://qiita.com/peroon/items/57bf22c0e32236752c5d
 brew install vim --devel --with-lua
+echo 'alias vim=/usr/local/bin/vim' >> $PROFILE
 if [ ! -d $HOME/.vim/bundle ]
 then
   mkdir -p $HOME/.vim/bundle
