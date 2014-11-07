@@ -40,7 +40,7 @@ cp \
  $HOME/local/etc/openssl/cert.pem
 
 brew install rbenv
-echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv # or .bash_profile
+echo 'eval "$(rbenv init -)"' >> $PROFILE
 exec $SHELL
 brew install ruby-build
 
@@ -49,7 +49,7 @@ rbenv install 2.1.4
 # for pip and Python
 # ref. http://conta.hatenablog.com/entry/2012/01/07/161026
 brew install python
-echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> .zshenv
+echo 'export PATH="$(brew --prefix python)/bin:$PATH"' >> $PROFILE
 
 # Vim 7.4
 # ref. http://qiita.com/peroon/items/57bf22c0e32236752c5d
