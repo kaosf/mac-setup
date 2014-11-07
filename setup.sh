@@ -11,6 +11,10 @@ PROFILE=$HOME/.zshenv
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
+# Install zsh and set to default
+brew install zsh
+chsh -s /bin/zsh
+
 # coreutils
 brew install coreutils
 echo 'PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> $PROFILE
