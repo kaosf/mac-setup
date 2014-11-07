@@ -5,14 +5,16 @@
 # Install "Command Line Tools for Xcode"
 # Open Xcode > Xcode > Open Developer Tool > More Developer Tools...
 
+PROFILE=$HOME/.zshenv
+#PROFILE=$HOME/.profile
+
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # coreutils
 brew install coreutils
-echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> $HOME/.zshenv # or .profile
-exec $SHELL
-ln -s $HOME/local/bin/gsed $HOME/local/bin/sed
+echo 'PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> $PROFILE
+echo 'MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"' >> $PROFILE
 
 # findutils
 brew install findutils
