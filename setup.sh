@@ -65,3 +65,6 @@ then
   git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 fi
 git config --global core.editor /usr/local/bin/vim
+
+# golang
+brew install go
