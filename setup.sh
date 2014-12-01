@@ -68,3 +68,8 @@ git config --global core.editor /usr/local/bin/vim
 
 # golang
 brew install go
+
+# peco
+# ref. https://github.com/peco/peco#mac-os-x--homebrew
+brew tap peco/peco
+brew install peco
