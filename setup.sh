@@ -9,7 +9,7 @@ PROFILE=$HOME/.zshenv
 #PROFILE=$HOME/.profile
 
 # Homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install zsh and set to default
 brew install zsh
