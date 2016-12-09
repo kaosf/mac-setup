@@ -36,6 +36,7 @@ brew link ncurses --force --overwrite
 brew install tig
 # For Japanese font
 echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
+echo 'export LANG=en_US.UTF-8' >> ~/.zshenv
 # ref. http://www.lancard.com/blog/2012/02/08/cui-%E3%81%AA-git-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6-tig-%E3%82%92-homebrew-%E3%81%A7%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%81%9F/
 
 # for Ruby
