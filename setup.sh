@@ -82,3 +82,9 @@ brew install go
 # ref. https://github.com/peco/peco#mac-os-x--homebrew
 brew tap peco/peco
 brew install peco
+
+# Node.js
+brew install nodebrew
+/usr/local/opt/nodebrew/bin/nodebrew setup_dirs
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $PROFILE
+nodebrew install-binary v8.5.0
