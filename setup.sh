@@ -39,23 +39,6 @@ echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
 echo 'export LANG=en_US.UTF-8' >> ~/.zshenv
 # ref. http://www.lancard.com/blog/2012/02/08/cui-%E3%81%AA-git-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6-tig-%E3%82%92-homebrew-%E3%81%A7%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%81%9F/
 
-# for Ruby
-# ref.
-#   http://qiita.com/items/05a09296f3633cadac3f
-#   http://qiita.com/items/c70a8f65edb69bedfc37
-#   http://qiita.com/items/12457815d5cee3723b97
-brew install openssl curl-ca-bundle readline
-cp \
- $HOME/local/bin/homebrew/Cellar/curl-ca-bundle/1.87/share/ca-bundle.crt \
- $HOME/local/etc/openssl/cert.pem
-
-brew install rbenv
-echo 'eval "$(rbenv init -)"' >> $PROFILE
-exec $SHELL
-brew install ruby-build
-
-rbenv install 2.1.4
-
 # for pip and Python
 # ref. http://conta.hatenablog.com/entry/2012/01/07/161026
 brew install python
@@ -83,8 +66,17 @@ brew install go
 brew tap peco/peco
 brew install peco
 
+# anyenv
+brew install anyenv
+echo 'eval "$(anyenv init -)"' >> $PROFILE
+
+# Ruby
+anyenv install rbenv
+rbenv install 2.7.0
+
 # Node.js
-brew install nodebrew
-/usr/local/opt/nodebrew/bin/nodebrew setup_dirs
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $PROFILE
-nodebrew install-binary v8.5.0
+anyenv install nodenv
+nodenv install v13.6.0
+
+# Yarn
+brew install yarn
